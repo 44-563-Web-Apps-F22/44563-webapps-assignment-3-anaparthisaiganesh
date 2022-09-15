@@ -71,16 +71,14 @@
    <pre>Reference Answer:<a href="https://stackoverflow.com/questions/73642880/is-it-possible-to-use-javascript-to-modify-a-script-element">Go to the Link</a>
   </pre>
   <pre>
-    <form action="iframe.php" target="my-iframe" method="post">
-   		
-        <label for="text">Some text:</label>
-        <input type="text" name="text" id="text">
-                  
-        <input type="submit" value="post">
-                  
-       </form>
-              
-       <iframe name="my-iframe" src="iframe.php"></iframe>
+    function getRandomId($min = NULL, $max = NULL) {
+        if (is_numeric($min) && is_numeric($max)) {
+                return mt_rand($min, $max);
+        }
+        else {
+                return mt_rand();
+        }
+ }
   </pre>    
 </body>
 </html>
